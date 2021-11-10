@@ -13,11 +13,13 @@ body {
     background-color: #b9baa3;
 }
 
-/* End of Base styles */
-
 .container {
     margin: 0rem 15%;
 }
+
+/* End of Base styles */
+
+/* Info Styles */
 
 .info {
     display: flex;
@@ -26,6 +28,16 @@ body {
     align-items: center;
     text-align: center;
     margin: 2rem;
+}
+
+.info h1 {
+    margin: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+
+.info h2 { 
+    margin: 1rem;
 }
 
 .info p {
@@ -44,6 +56,10 @@ body {
     margin: 1rem 0;
 }
 
+
+/* End of Info Styles */
+
+
 /* Card styles */
 
 .card {
@@ -51,7 +67,7 @@ body {
     color: #d6d5c9;
     padding: 1rem;
     border-radius: 10px;
-    margin: 1.5rem 0;
+    margin: 4rem 0;
     position: relative;
 }
 
