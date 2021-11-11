@@ -69,29 +69,52 @@ body {
     border-radius: 10px;
     margin: 4rem 0;
     position: relative;
+    width: 15rem;
+    left: 16px;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
+.card.visible {
+    opacity: 1;
+}
 
 /* End of Card styles */
 
 /* Timeline styles */
 
-.line {
+
+.timeline {
     margin-top: 3rem;
     position: relative;
 }
 
+.years {
+    width: 200px;
+    left: 1.5rem;
+    position: absolute;
+    font-style: italic;
+}
 
-
-.line::after {
-    content:"";
+.line {
     width: 0.2rem;
-    height: 100%;
-    top: 1.3rem;
+    min-height: 200px;
+    top: 2rem;
     left: -1rem;
     background-color: #902923;
     position: absolute;
+    bottom: calc(100% - 20px)
+}
 
+.line::after {
+    content:"";
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #902923;
+    position: absolute;
+    top: 0;
+    left: -6.5px;
 }
 
 .line .card::after {
@@ -112,8 +135,7 @@ body {
     border-radius: 50%;
     background-color: #902923;
     position: absolute;
-    bottom: -22px;
-    left:-22px;
-
+    bottom: -10px;
+    left: -6.5px;
 }
 /* End of Timeline styles */
