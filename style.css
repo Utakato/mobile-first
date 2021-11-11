@@ -76,12 +76,14 @@ body {
 
 /* Timeline styles */
 
-.timeline {
+.line {
     margin-top: 3rem;
     position: relative;
 }
 
-.timeline::after {
+
+
+.line::after {
     content:"";
     width: 0.2rem;
     height: 100%;
@@ -92,14 +94,26 @@ body {
 
 }
 
-.timeline .card::after {
+.line .card::after {
     content: "";
     width: 1rem;
     height: 1rem;
+    border-radius: 50%;
     background-color: #902923;
     position: absolute;
     top: 1.3rem;
     left:-22px;
+}
+
+.line::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
+    background-color: #902923;
+    position: absolute;
+    bottom: -22px;
+    left:-22px;
+
 }
 /* End of Timeline styles */
