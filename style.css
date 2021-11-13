@@ -150,7 +150,8 @@ body {
     display: flex;
     justify-content: flex-start;
     margin: 1rem 10%;
-    gap: 5rem;
+    padding: 1rem 5rem;
+    gap: 10rem;
 }
 
 .intro {
@@ -164,6 +165,9 @@ body {
     width: 23rem;
 }
 
+.timeline {
+    margin-top: 2rem;
+}
 
 }
 /* End of Responsive Style */
