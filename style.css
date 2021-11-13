@@ -75,6 +75,9 @@ body {
     transition: opacity 0.5s;
 }
 
+.card:last-child {
+    margin-bottom: 5rem;
+}
 .card.visible {
     opacity: 1;
 }
@@ -139,3 +142,28 @@ body {
     left: -6px;
 }
 /* End of Timeline styles */
+
+
+/* Responsive Style */
+@media (min-width: 768px) {
+.container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem 10%;
+    gap: 5rem;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    
+}
+
+.card {
+    width: 23rem;
+}
+
+
+}
+/* End of Responsive Style */
